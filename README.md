@@ -1,1 +1,133 @@
-# portfolio
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(50, 50, 106);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(133, 109, 228);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstSection div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3em;
+            margin: 30px 0;
+        }
+
+        .rightSection {}
+
+        .purple {
+            color: rgb(140, 89, 189);
+        }
+
+        .col-md-6 ul li {
+            list-style-type: none;
+            margin: 23px 0;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+
+                Welcome,  This is <span class="purple">Likhith</span>   This project is about portfolio
+                <span id="element"></span>
+            </div>
+
+
+
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li class="personal">Personal Details :-</li>
+                        <li>------------------------</li>
+                        <li>Name : Likhith</li>
+                        <li>Student of Vignans Lara and Institute of Technology and Science (VLITS)</li>
+                        <li>Branch : Information Technology (IT)</li>
+                        <li>Year : 3 year</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>First</i>sentence.', '&amp;a second sentence.'],
+            typespeed: 50,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</body>
+
+</html>
